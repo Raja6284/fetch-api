@@ -49,3 +49,14 @@ const mainFunc = async () => {
 }
 
 mainFunc()
+
+//COOKIE IN JAVASCRIPT
+let key = prompt("enter the key");
+let value = prompt("enter the value");
+//console.log(document.cookie);
+//document.cookie = `${key} = ${value}`;
+document.cookie = encodeURIComponent(key) + '=' + encodeURIComponent(value);
+document.cookie = "name=raja";
+document.cookie = "name2 = rajaraja";
+console.log(document.cookie);
+//decodeURIComponent("encodedURI")
